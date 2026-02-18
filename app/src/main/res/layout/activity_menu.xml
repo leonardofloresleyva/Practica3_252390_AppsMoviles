@@ -8,7 +8,7 @@
     tools:context=".MenuActivity">
 
     <Button
-        android:id="@+id/button_sweets"
+        android:id="@+id/button_combinaciones"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -20,13 +20,13 @@
         android:text="@string/combinaciones"
         android:textColor="@color/white"
         android:textSize="@dimen/menu_buttons_text"
-        app:layout_constraintBottom_toTopOf="@+id/button_combos"
-        app:layout_constraintEnd_toStartOf="@+id/button_salties"
+        app:layout_constraintBottom_toTopOf="@+id/button_sopas"
+        app:layout_constraintEnd_toStartOf="@+id/button_tortas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_cold_drinks" />
+        app:layout_constraintTop_toBottomOf="@+id/button_antojitos" />
 
     <Button
-        android:id="@+id/button_salties"
+        android:id="@+id/button_tortas"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -37,13 +37,13 @@
         android:text="@string/tortas"
         android:textColor="@color/white"
         android:textSize="@dimen/menu_buttons_text"
-        app:layout_constraintBottom_toTopOf="@+id/button_custom"
+        app:layout_constraintBottom_toTopOf="@+id/button_bebidas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_sweets"
-        app:layout_constraintTop_toBottomOf="@+id/button_hot_drinks" />
+        app:layout_constraintStart_toEndOf="@+id/button_combinaciones"
+        app:layout_constraintTop_toBottomOf="@+id/button_especialidades" />
 
     <Button
-        android:id="@+id/button_combos"
+        android:id="@+id/button_sopas"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -57,12 +57,12 @@
         android:textColor="@color/white"
         android:textSize="@dimen/menu_buttons_text"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_custom"
+        app:layout_constraintEnd_toStartOf="@+id/button_bebidas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sweets" />
+        app:layout_constraintTop_toBottomOf="@+id/button_combinaciones" />
 
     <Button
-        android:id="@+id/button_custom"
+        android:id="@+id/button_bebidas"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -76,11 +76,11 @@
         android:textSize="@dimen/menu_buttons_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_combos"
-        app:layout_constraintTop_toBottomOf="@+id/button_salties" />
+        app:layout_constraintStart_toEndOf="@+id/button_sopas"
+        app:layout_constraintTop_toBottomOf="@+id/button_tortas" />
 
     <Button
-        android:id="@+id/button_hot_drinks"
+        android:id="@+id/button_especialidades"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -92,9 +92,9 @@
         android:text="@string/especialidades"
         android:textColor="@color/white"
         android:textSize="@dimen/menu_buttons_text"
-        app:layout_constraintBottom_toTopOf="@+id/button_salties"
+        app:layout_constraintBottom_toTopOf="@+id/button_tortas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_cold_drinks"
+        app:layout_constraintStart_toEndOf="@+id/button_antojitos"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
@@ -121,13 +121,13 @@
         android:text="@string/our_menu"
         android:textAllCaps="true"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_hot_drinks"
+        app:layout_constraintBottom_toTopOf="@+id/button_especialidades"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/button_cold_drinks"
+        android:id="@+id/button_antojitos"
         android:layout_width="158dp"
         android:layout_height="71dp"
         android:layout_columnWeight="1"
@@ -140,8 +140,8 @@
         android:text="@string/antojitos"
         android:textColor="@color/white"
         android:textSize="@dimen/menu_buttons_text"
-        app:layout_constraintBottom_toTopOf="@+id/button_sweets"
-        app:layout_constraintEnd_toStartOf="@+id/button_hot_drinks"
+        app:layout_constraintBottom_toTopOf="@+id/button_combinaciones"
+        app:layout_constraintEnd_toStartOf="@+id/button_especialidades"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 

@@ -2,17 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     >
     <ImageView
+        android:id="@+id/product_img"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:src="@drawable/quesadillas"
         android:layout_marginStart="5dp"/>
     
     <LinearLayout
+        android:id="@+id/product_description_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
@@ -35,8 +37,10 @@
             android:layout_marginRight="15dp"
             android:text="Descripción del producto"
             android:textSize="15sp"/>
+
     </LinearLayout>
     <TextView
+        android:id="@+id/product_price"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
